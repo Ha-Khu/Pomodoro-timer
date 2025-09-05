@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --darker-blue: #1E2235;
+  --orange-red: #FF6B6B;
+  --light-purple: #E3E6F3;
+  --purple-grey: #8A8DA6;
+  --dark-blue: #2B2F47
+}
