@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -11,5 +12,38 @@
   --orange-red: #FF6B6B;
   --light-purple: #E3E6F3;
   --purple-grey: #8A8DA6;
-  --dark-blue: #2B2F47
+  --dark-blue: #2B2F47;
+}
+
+body{
+  background-color: var(--darker-blue);
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head-title{
+  margin-top: 80px;
+  color: var(--light-purple);
+}
+
+nav ul{
+  background-color: var(--dark-blue);
+  border-radius: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+li{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100px;
+  background-color: var(--orange-red);
 }
