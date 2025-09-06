@@ -32,18 +32,75 @@ body{
 
 nav ul{
   background-color: var(--dark-blue);
-  border-radius: 100px;
-  padding: 10px;
+  border-radius: 4rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  gap: 100px;
+  list-style: none;
+  gap: 1rem;
   margin-top: 80px;
 }
 
-li{
+nav ul .nav-btn{
+  background: transparent;
+  color: var(--purple-grey);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 5px;
-  border-radius: 100px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul .nav-btn.active{
   background-color: var(--orange-red);
+  color: #fff;
+}
+
+.timer-background{
+  margin-top: 80px;
+  border-radius: 50rem;
+  width: 35%;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1), 
+              0 0 60px rgba(255, 99, 71, 0.3);
+}
+
+.timer-display{
+  border: 8px solid var(--orange-red);
+  width: 75%;
+  height: 15em;
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--darker-blue);
+}
+
+.time{
+  margin-top: 50px;
+  font-size: 3em;
+  color: var(--purple-grey);
+}
+
+.pause-btn{
+  border: none;
+  background: none;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: var(--light-purple);
+  cursor: pointer;
+}
+
+.settings {
+  margin-top: 200px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
 }
